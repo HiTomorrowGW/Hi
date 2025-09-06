@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let footerPath = 'includes/footer.html';
 
     const currentPath = window.location.pathname;
-    if (currentPath.includes('/rooms/') || currentPath.endsWith('/rooms.html') || currentPath.endsWith('/room.html')) {
+    if (currentPath.includes('/rooms/') || currentPath.endsWith('/rooms.html') || currentPath.endsWith('/room.html') || currentPath.endsWith('/contact.html')) {
         headerPath = '../includes/header.html';
         footerPath = '../includes/footer.html';
     }
