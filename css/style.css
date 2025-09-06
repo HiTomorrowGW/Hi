@@ -1,0 +1,274 @@
+body {
+    padding-top: 56px;
+}
+
+/* Animation for elements to fade in and move up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section {
+    /* background-color: #f8f9fa; */ /* Replaced with image */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1974&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0; /* Adjusted padding for more space */
+    margin-bottom: 0;
+    min-height: 100vh; /* Make it full height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    overflow: hidden; /* Prevents content from showing before animation */
+}
+
+.hero-section h1 {
+    font-size: 4.5rem; /* Larger font size for the main title */
+    font-weight: 700; /* Bolder font weight */
+    color: #ffffff; /* White text for contrast */
+    opacity: 0; /* Set initial state for animation */
+    animation: fadeInUp 0.8s ease-out 0.3s forwards;
+}
+
+.hero-section p.lead {
+    font-size: 1.75rem; /* Larger font size for description */
+    color: #f8f9fa; /* Lighter white for description */
+    max-width: 700px; /* Limit width for readability */
+    margin: 1rem auto 2rem auto; /* Center and add vertical margin */
+    opacity: 0; /* Set initial state for animation */
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+    .hero-section p.lead {
+        font-size: 1.25rem;
+    }
+    .hero-section {
+        padding: 8rem 0;
+    }
+}
+
+/* Custom styles for room.html based on Monarc House design */
+
+/* General body adjustments for better typography */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container adjustments */
+.container {
+    max-width: 1200px;
+}
+
+/* Room Main Image */
+#room-main-image {
+    width: 100%;
+    height: 500px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area, cropping if necessary */
+    border-radius: 20px; /* Increased for more rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #222;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Text styles */
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* Horizontal Rule */
+hr {
+    border-top: 1px solid #eee;
+}
+
+/* Key Details Section */
+.bi {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Amenities Section */
+#room-amenities ul {
+    padding-left: 0;
+}
+
+#room-amenities li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Host Information */
+.rounded-circle {
+    border: 1px solid #ddd;
+}
+
+/* Booking Card */
+.card.shadow-sm {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #007bff; /* Primary color for price */
+}
+
+.form-label {
+    font-weight: 600;
+    color: #444;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Sticky booking card for larger screens */
+@media (min-width: 992px) {
+    .sticky-top {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 80px; /* Adjust based on navbar height */
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #room-main-image {
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+    }
+}
+
+/* Revert border from room cards in rooms.html */
+.card {
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+/* Styles for rooms.html to ensure uniform card heights */
+#room-list-container .card-img-top {
+    height: 225px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Footer Social Links */
+footer {
+    background-color: #343a40; /* Dark background for footer */
+    color: #ffffff; /* White text color */
+    padding: 3rem 0; /* Padding top and bottom */
+    text-align: center; /* Center align text */
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin-bottom: 1rem; /* Space below copyright text */
+    color: #ffffff; /* Ensure copyright text is white */
+}
+
+.social-links {
+    margin-top: 1rem; /* Space above social links */
+}
+
+.social-links a {
+    color: #ffffff; /* White color for icons */
+    font-size: 0.8rem; /* Size of social icons */
+    margin: 0 0.8rem; /* Space between icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.policy-links {
+    margin-top: 0.5rem; /* Space above policy links */
+    margin-bottom: 0.5rem; /* Space below policy links */
+}
+
+.policy-links a {
+    color: #ffffff; /* White color for links */
+    font-size: 0.9rem; /* Smaller font size for policy links */
+    margin: 0 0.5rem; /* Space between links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.policy-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
