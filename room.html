@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
 
     <div id="header-placeholder"></div>
@@ -56,11 +58,13 @@
                         <div class="carousel-inner">
                             <!-- Carousel items will be dynamically loaded here -->
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -73,20 +77,13 @@
                     <div class="row mb-4" id="room-amenities">
                         <!-- Amenities will be dynamically loaded here -->
                     </div>
-
-                    
-
-                    
-
-                    
-
                 </div>
 
                 <!-- Booking Card Column (Right) -->
                 <div class="col-lg-4">
                     <div class="card shadow-sm sticky-top" style="top: 80px;">
                         <div class="card-body">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -104,7 +101,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const urlParams = new URLSearchParams(window.location.search);
             const roomId = urlParams.get('id');
             const roomDetailContainer = document.getElementById('room-detail-container');
@@ -129,7 +126,7 @@
                         // Placeholder for location - not in current room object
                         // document.getElementById('room-location').innerText = room.location;
                         document.getElementById('room-description').innerText = room.description;
-                        
+
 
                         // Placeholder for key details - not in current room object
                         document.getElementById('room-capacity').innerText = '4'; // Example value
@@ -213,7 +210,7 @@
                         } else if (room.image_url) {
                             // Fallback to single image if no additional images
                             document.getElementById('room-main-image').src = room.image_url;
-                             // Hide carousel if no additional images
+                            // Hide carousel if no additional images
                             document.getElementById('roomCarousel').style.display = 'none';
                         } else {
                             // Hide carousel if no images at all
@@ -230,4 +227,5 @@
         });
     </script>
 </body>
+
 </html>

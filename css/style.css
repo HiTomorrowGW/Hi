@@ -59,6 +59,70 @@ body {
 
 /* Custom styles for room.html based on Monarc House design */
 
+body {
+    
+}
+
+/* Animation for elements to fade in and move up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section {
+    /* background-color: #f8f9fa; */ /* Replaced with image */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=1974&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    padding: 7rem 0; /* Adjusted padding for more space */
+    margin-bottom: 0;
+    min-height: 100vh; /* Make it full height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    overflow: hidden; /* Prevents content from showing before animation */
+}
+
+.hero-section h1 {
+    font-size: 4.5rem; /* Larger font size for the main title */
+    font-weight: 700; /* Bolder font weight */
+    color: #ffffff; /* White text for contrast */
+    opacity: 0; /* Set initial state for animation */
+    animation: fadeInUp 0.8s ease-out 0.3s forwards;
+}
+
+.hero-section p.lead {
+    font-size: 1.75rem; /* Larger font size for description */
+    color: #f8f9fa; /* Lighter white for description */
+    max-width: 700px; /* Limit width for readability */
+    margin: 1rem auto 2rem auto; /* Center and add vertical margin */
+    opacity: 0; /* Set initial state for animation */
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+    .hero-section p.lead {
+        font-size: 1.25rem;
+    }
+    .hero-section {
+        padding: 8rem 0;
+    }
+    .bg-white {
+        padding-bottom: 1rem !important; /* Reduce bottom padding for key features section */
+    }
+}
+
+/* Custom styles for room.html based on Monarc House design */
+
 /* General body adjustments for better typography */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -92,7 +156,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -207,6 +271,9 @@ hr {
     .lead {
         font-size: 1.1rem;
     }
+    .bg-white {
+        padding-bottom: 1rem !important; /* Reduce bottom padding for key features section */
+    }
 }
 
 .img-shadow {
@@ -235,6 +302,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 3rem;
 }
 
 footer .container {
@@ -278,4 +346,50 @@ footer p {
 
 .policy-links a:hover {
     color: #007bff; /* Change color on hover */
+}
+
+
+/* Map Links Styles */
+.map-links {
+    display: flex;
+    flex-wrap: nowrap; /* 강제로 한 줄에 표시 */
+    justify-content: center;
+    gap: 1rem; /* 링크 사이 간격 조절 */
+    margin-top: 1rem; /* 링크 위 여백 */
+    margin-bottom: 1rem; /* 링크 아래 여백 */
+}
+
+/* Responsive Map Button Font Size */
+.map-btn {
+    font-size: 1rem; /* Default font size for larger screens */
+    padding: 0.5rem 0.8rem; /* Default padding */
+}
+
+@media (max-width: 992px) {
+    .map-btn {
+        font-size: 0.9rem;
+        padding: 0.45rem 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .map-btn {
+        font-size: 0.9rem; /* Further increased for better readability on mobile */
+        padding: 0.45rem 0.75rem; /* Adjusted padding for mobile */
+    }
+}
+
+/* Facility Thumbnail Styling */
+.facility-thumbnail {
+    object-fit: cover;
+    width: 100px !important;
+    height: 100px !important;
+    display: block; /* Ensures consistent block-level behavior */
 }
