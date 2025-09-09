@@ -32,7 +32,7 @@ try:
     # Insert sample room data
     rooms_to_add = [
         {
-            "name": "아늑한 싱글룸",
+            "name": "스탠다드",
             "description": "혼자 여행객을 위한 완벽한 방입니다. 편안한 침대와 모든 필수 편의시설을 갖추고 있습니다.",
             "price": 75000,
             "image_url": "/images/1/main.jpg",
@@ -41,7 +41,7 @@ try:
             "tags": ["가성비", "1인실"]
         },
         {
-            "name": "넓은 더블룸",
+            "name": "디럭스",
             "description": "커플이나 친구와 함께 사용하기 좋은 넓은 공간입니다. 퀸 사이즈 침대가 제공됩니다.",
             "price": 120000,
             "image_url": "/images/2/main.jpg",
@@ -50,7 +50,7 @@ try:
             "tags": ["커플 추천", "넓은 공간"]
         },
         {
-            "name": "가족용 스위트룸",
+            "name": "파노라마 뷰",
             "description": "가족 단위 여행객을 위한 최고의 선택. 별도의 거실 공간과 여러 개의 침대가 마련되어 있습니다.",
             "price": 200000,
             "image_url": "/images/1/main.jpg",
@@ -59,7 +59,7 @@ try:
             "tags": ["가족 여행", "취사 가능"]
         },
         {
-            "name": "오션뷰 디럭스룸",
+            "name": "트리플",
             "description": "아름다운 바다 전망을 자랑하는 방입니다. 발코니에서 멋진 일출을 감상하세요.",
             "price": 180000,
             "image_url": "/images/2/main.jpg",
@@ -68,7 +68,7 @@ try:
             "tags": ["오션뷰", "로맨틱"]
         },
         {
-            "name": "비즈니스 트윈룸",
+            "name": "패밀리",
             "description": "출장객을 위한 실용적인 공간. 두 개의 싱글 침대와 업무용 책상이 준비되어 있습니다.",
             "price": 110000,
             "image_url": "/images/1/main.jpg",
