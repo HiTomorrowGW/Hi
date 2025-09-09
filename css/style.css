@@ -209,6 +209,10 @@ hr {
     }
 }
 
+.img-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Revert border from room cards in rooms.html */
 .card {
     border: 1px solid rgba(0,0,0,.125);
@@ -222,60 +226,21 @@ hr {
     object-fit: cover;
 }
 
-/* Footer Social Links */
+/* Footer Styles */
 footer {
-    background-color: #000; /* Dark background for footer */
-    color: #ffffff; /* White text color */
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text color */
+    text-align: center;
     padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Changed to flex-start */
-    justify-content: center;
-}
-
-footer p {
-    margin-bottom: 1rem; /* Space below copyright text */
-    color: #ffffff; /* Ensure copyright text is white */
-}
-
-.social-links {
-    margin-top: 1rem; /* Space above social links */
-}
-
-.social-links a {
-    color: #ffffff; /* White color for icons */
-    font-size: 0.6rem; /* Size of social icons */
-    margin: 0 0.8rem; /* Space between icons */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.social-links a:hover {
-    color: #007bff; /* Change color on hover */
-}
-
-.policy-links {
-    margin-top: 0.5rem; /* Space above policy links */
-    margin-bottom: 0.5rem; /* Space below policy links */
-}
-
-.policy-links a {
-    color: #ffffff; /* White color for links */
-    font-size: 0.9rem; /* Smaller font size for policy links */
-    margin: 0 0.5rem; /* Space between links */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.policy-links a:hover {
-    color: #007bff; /* Change color on hover */
-}
-
-footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Changed to flex-start */
+    align-items: center; /* Center content horizontally */
     justify-content: center;
 }
 
@@ -313,22 +278,4 @@ footer p {
 
 .policy-links a:hover {
     color: #007bff; /* Change color on hover */
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
