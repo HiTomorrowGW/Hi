@@ -177,6 +177,9 @@
                             class="btn btn-outline-primary map-btn">
                             <i class="fas fa-map-marked-alt me-2"></i>카카오 맵
                         </a>
+                        <button type="button" class="btn btn-outline-primary map-btn" data-bs-toggle="modal" data-bs-target="#directionsModal">
+                            <i class="fas fa-camera me-2"></i>오시는 길
+                        </button>
                     </div>
                 </div>
             </div>
@@ -198,6 +201,46 @@
                 </div>
                 <div class="modal-body text-center">
                     <img src="" class="img-fluid" id="modalImage" alt="Large Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Directions Modal -->
+    <div class="modal fade" id="directionsModal" tabindex="-1" aria-labelledby="directionsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="directionsModalLabel">오시는 길</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="directionsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#directionsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#directionsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#directionsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/directions/00.jpg" class="d-block w-100" alt="오시는 길 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/directions/01.jpg" class="d-block w-100" alt="오시는 길 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/directions/02.jpg" class="d-block w-100" alt="오시는 길 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#directionsCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#directionsCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
