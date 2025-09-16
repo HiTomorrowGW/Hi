@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://hitomorrow.netlify.app/sitemap.xml
