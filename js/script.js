@@ -1,36 +1,6 @@
 // JavaScript for future interactive features
 
 document.addEventListener('DOMContentLoaded', function() {
-    let headerPath = 'includes/header.html';
-    let footerPath = 'includes/footer.html';
-
-    const currentPath = window.location.pathname;
-    // Adjust paths for pages that are not in the root directory
-    if (currentPath.includes('/static_rooms/') || currentPath.endsWith('/rooms.html') || currentPath.endsWith('/contact.html')) {
-        headerPath = '../includes/header.html';
-        footerPath = '../includes/footer.html';
-    }
-
-    const headerPlaceholder = document.getElementById('header-placeholder');
-    if (headerPlaceholder) { // Only load if placeholder exists
-        fetch(headerPath)
-            .then(response => response.text())
-            .then(data => {
-                headerPlaceholder.innerHTML = data;
-            })
-            .catch(error => console.error('Error loading header:', error));
-    }
-
-    const footerPlaceholder = document.getElementById('footer-placeholder');
-    if (footerPlaceholder) { // Only load if placeholder exists
-        fetch(footerPath)
-            .then(response => response.text())
-            .then(data => {
-                footerPlaceholder.innerHTML = data;
-            })
-            .catch(error => console.error('Error loading footer:', error));
-    }
-
     // Handle image modal
     const imageModal = document.getElementById('imageModal');
     if (imageModal) {
