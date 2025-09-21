@@ -7,6 +7,10 @@ body {
     flex-direction: column;
 }
 
+main {
+    flex: 1;
+}
+
 /* Animation for elements to fade in and move up */
 @keyframes fadeInUp {
     from {
