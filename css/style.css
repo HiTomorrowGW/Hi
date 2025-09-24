@@ -213,7 +213,7 @@ hr {
 }
 
 /* Revert border from room cards in rooms.html */
-.card {
+#room-list-container .card {
     border: 1px solid rgba(0,0,0,.125);
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
@@ -319,11 +319,16 @@ footer p {
 }
 
 /* Facility Thumbnail Styling */
-.facility-thumbnail {
+.facility-img-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 0.5rem;
+}
+
+.facility-img-wrapper img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    width: 100px !important;
-    height: 100px !important;
-    display: block; /* Ensures consistent block-level behavior */
 }
 
 /* Carousel Image Uniform Size */
