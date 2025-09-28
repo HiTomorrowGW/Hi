@@ -82,6 +82,11 @@ main {
     .bg-white {
         padding-bottom: 1rem; /* Reduce bottom padding for key features section */
     }
+    .nav-link {
+        font-size: 0.85rem; /* Smaller font size for nav links on small screens */
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
 }
 
 
